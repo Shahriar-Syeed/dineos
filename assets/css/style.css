@@ -12,7 +12,9 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #111111; /* Replace with your desired background color */
+  background: var(
+    --color-secondary
+  ); /* Replace with your desired background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add any desired box-shadow */
 }
 
@@ -21,6 +23,7 @@ header {
 }
 .navbar-brand {
   width: 170px;
+  flex-shrink: 0;
 }
 
 .menu-area {
@@ -375,7 +378,7 @@ a.nav-link::before {
 /* ////////  RESERVATION SECTION  /////////// */
 /* ///////////////////////////\\\\\\///////// */
 .reservation-area-section {
-  background: #111111;
+  background: var(--color-secondary);
 }
 .resarvation-location-title {
   font-size: 50px;
@@ -422,7 +425,7 @@ a.nav-link::before {
 }
 .about-btn-area .rts-btn.btn-primary:hover {
   border: 1px solid #e2e2e2;
-  color: #111111;
+  color: var(--color-secondary);
 }
 .service-title span {
   font-family: "Plus+Jakarta+Sans", sans-serif;
@@ -468,6 +471,9 @@ a.nav-link::before {
   border-bottom: 2px solid #e6e6e6;
   transition: all 0.4s;
 }
+.single-menu-img {
+  border-bottom: 1px solid #e6e6e6;
+}
 .single-menu-img a img {
   max-width: 100px;
 }
@@ -475,11 +481,11 @@ a.nav-link::before {
   font-size: 24px;
   font-weight: 400;
   line-height: 35px;
-  color: #111111;
+  color: var(--color-heading-1);
   margin: 0;
 }
 .menu-title a {
-  color: #111111;
+  color: var(--color-heading-1);
   background-image: linear-gradient(
     to right,
     var(--color-primary) 50%,
@@ -505,9 +511,8 @@ a.nav-link::before {
   border-radius: 30px;
   font-size: 14px;
   font-weight: 700;
-  color: #111111;
+  color: var(--color-heading-1);
   transition: all cubic-bezier(0.39, 0.58, 0.57, 1) 0.3s;
-  box-shadow: 0 0 25px -12px rgba(17, 17, 17, 0.1607843137);
 }
 .menu-price a {
   color: inherit;
@@ -616,24 +621,23 @@ a.nav-link::before {
 .left-quote {
   position: absolute;
   left: 120px;
-  top: 38%;
+  top: 35%;
   transform: translateY(-50%);
   z-index: 3;
 }
 .right-quote {
   position: absolute;
   right: 120px;
-  bottom: 38%;
+  bottom: 35%;
   transform: translateY(50%);
   z-index: 3;
 }
-.swiper-wrapper {
+/* .swiper-wrapper {
   background: #f8f8f8;
 }
 .testimonial-content {
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.07);
   background: #f8f8f8;
-}
+} */
 .testimonial-text {
   padding-right: 50px;
   padding-left: 50px;
@@ -648,11 +652,11 @@ a.nav-link::before {
   font-weight: 400;
   font-style: italic;
   line-height: 45px;
-  color: #111111;
+  color: var(--color-heading-1);
   border-bottom: 1px solid #e1e1e1;
 }
 .author-title {
-  color: #111111;
+  color: var(--color-heading-1);
   font-size: 24px;
   line-height: 30px;
   font-weight: 400;
@@ -772,7 +776,7 @@ footer {
   margin-bottom: 30px;
 }
 .query-list .sub-text {
-  color: #fff;
+  color: var(--color-primary);
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -780,7 +784,7 @@ footer {
   display: block;
 }
 .query-list a .text-heading {
-  color: var(--color-primary);
+  color: #fff;
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
