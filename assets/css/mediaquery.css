@@ -125,7 +125,7 @@
     margin: 0 !important;
   }
 }
-@media (max-width: 554px) {
+@media (max-width: 576px) {
   .nav-button {
     display: none;
   }
@@ -155,9 +155,17 @@
     margin-right: 0 !important;
     margin-bottom: 20px;
   }
+  .single-menu-img {
+    text-align: center;
+  }
   .menu-price {
     margin: 10px auto 0 auto;
     max-width: fit-content;
+  }
+  .tea-menu-content-wrqpper .title-img,
+  .tea-menu-content-wrapper .secondary-title {
+    text-align: center !important;
+    margin-right: 0;
   }
 }
 @media (max-width: 400px) {
