@@ -410,6 +410,7 @@ a.nav-link::before {
 }
 .about-text {
   animation: fadeInUp 1s;
+  font-size: 16px;
 }
 .service-title {
   font-size: 80px;
@@ -457,7 +458,8 @@ a.nav-link::before {
   width: 60%;
   padding: 10px;
 }
-.tea-menu-content-wrapper {
+.tea-menu-content-wrapper .secondary-title.tea-menu-title {
+  font-size: 40px;
 }
 
 .menu-links {
@@ -778,7 +780,7 @@ footer {
   display: block;
 }
 .query-list a .text-heading {
-  color: #ffffff;
+  color: var(--color-primary);
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
