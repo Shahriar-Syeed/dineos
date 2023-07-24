@@ -126,6 +126,9 @@
   }
 }
 @media (max-width: 554px) {
+  .nav-button {
+    display: none;
+  }
   .hero-title {
     font-size: 30px;
     line-height: 45px;
