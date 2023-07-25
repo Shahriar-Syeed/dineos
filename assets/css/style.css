@@ -464,10 +464,14 @@ a.nav-link::before {
 .hero-shape-area.about-shape-arie .shape {
   background: #e4e4e4;
 }
+.about-text-wrapper {
+}
 .about-text {
   animation: fadeInUp 1s;
   font-size: 16px;
+  max-width: 360px;
 }
+
 .service-title {
   font-size: 80px;
   line-height: 80px;
