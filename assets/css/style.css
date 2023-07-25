@@ -927,6 +927,7 @@ footer {
   display: flex;
   align-items: center;
   transition: 0.3s;
+  justify-content: center;
 }
 .copy-right-section {
   text-align: center;
