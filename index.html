@@ -62,7 +62,9 @@
   <body>
     <header class="header-section" id="header">
       <div class="container">
-        <nav class="navbar navbar-expand-md justify-content-between pt-0 pb-0">
+        <nav
+          class="navbar navbar-expand-lg justify-content-between pr-12 pl-12"
+        >
           <a class="navbar-brand" href="#"
             ><img src="./img/logo/01.svg" alt=""
           /></a>
@@ -124,61 +126,60 @@
                   aria-expanded="false"
                   >MENUS</a
                 >
-                <div class="container">
-                  <ul
-                    class="dropdown-menu img-dropdown-menu"
-                    aria-labelledby="navbarDropdown3"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item d-flex flex-column align-items-center"
-                        href="#"
-                      >
-                        <img
-                          src="./img/nav-menus/menu-1.webp"
-                          class="img-fluid"
-                          alt=""
-                        />Mnuetab
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item d-flex flex-column align-items-center"
-                        href="#"
-                      >
-                        <img
-                          src="./img/nav-menus/menu-2.webp"
-                          class="img-fluid"
-                          alt=""
-                        />MenuList
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item d-flex flex-column align-items-center"
-                        href="#"
-                      >
-                        <img
-                          src="./img/nav-menus/menu-3.webp"
-                          class="img-fluid"
-                          alt=""
-                        />MenuList2
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item d-flex flex-column align-items-center"
-                        href="#"
-                      >
-                        <img
-                          src="./img/nav-menus/menu-4.webp"
-                          class="img-fluid"
-                          alt=""
-                        />MenuSection
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <ul
+                  class="dropdown-menu img-dropdown-menu"
+                  aria-labelledby="navbarDropdown3"
+                  style="width: 1094%"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-column align-items-center"
+                      href="#"
+                    >
+                      <img
+                        src="./img/nav-menus/menu-1.webp"
+                        class="img-fluid"
+                        alt=""
+                      />Mnuetab
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-column align-items-center"
+                      href="#"
+                    >
+                      <img
+                        src="./img/nav-menus/menu-2.webp"
+                        class="img-fluid"
+                        alt=""
+                      />MenuList
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-column align-items-center"
+                      href="#"
+                    >
+                      <img
+                        src="./img/nav-menus/menu-3.webp"
+                        class="img-fluid"
+                        alt=""
+                      />MenuList2
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex flex-column align-items-center"
+                      href="#"
+                    >
+                      <img
+                        src="./img/nav-menus/menu-4.webp"
+                        class="img-fluid"
+                        alt=""
+                      />MenuSection
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item dropdown dropdown-hover">
                 <a
@@ -243,32 +244,30 @@
           </div>
         </nav>
       </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var dropdowns = document.getElementsByClassName("dropdown");
-
-          for (var i = 0; i < dropdowns.length; i++) {
-            dropdowns[i].addEventListener("mouseenter", function () {
-              this.classList.add("show");
-              var dropdownMenu =
-                this.getElementsByClassName("dropdown-menu")[0];
-              if (dropdownMenu) {
-                dropdownMenu.classList.add("show");
-              }
-            });
-
-            dropdowns[i].addEventListener("mouseleave", function () {
-              this.classList.remove("show");
-              var dropdownMenu =
-                this.getElementsByClassName("dropdown-menu")[0];
-              if (dropdownMenu) {
-                dropdownMenu.classList.remove("show");
-              }
-            });
-          }
-        });
-      </script>
     </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var dropdowns = document.getElementsByClassName("dropdown");
+
+        for (var i = 0; i < dropdowns.length; i++) {
+          dropdowns[i].addEventListener("mouseenter", function () {
+            this.classList.add("show");
+            var dropdownMenu = this.getElementsByClassName("dropdown-menu")[0];
+            if (dropdownMenu) {
+              dropdownMenu.classList.add("show");
+            }
+          });
+
+          dropdowns[i].addEventListener("mouseleave", function () {
+            this.classList.remove("show");
+            var dropdownMenu = this.getElementsByClassName("dropdown-menu")[0];
+            if (dropdownMenu) {
+              dropdownMenu.classList.remove("show");
+            }
+          });
+        }
+      });
+    </script>
     <!-- side bar for desktop -->
     <aside id="side-bar" class="side-bar">
       <div class="inner">
