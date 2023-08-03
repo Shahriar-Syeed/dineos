@@ -189,6 +189,9 @@
   .next-prev-btn {
     display: none;
   }
+  footer .top-footer-section .container div {
+    padding-left: 15px;
+  }
 }
 @media (max-width: 400px) {
   .resarvation-location-title {
@@ -201,5 +204,24 @@
   }
   .navbar-brand {
     width: 120px;
+  }
+  .hero-button-area {
+    flex-direction: column;
+  }
+  .rts-btn {
+    padding: 18px 20px;
+  }
+  .reservation-area-section {
+    padding: 10px;
+  }
+}
+@media (max-width: 300px) {
+  .reservation-area-section {
+    padding: 10px;
+  }
+  .footer-address ul li,
+  .footer-address ul li a {
+    margin-left: 0 !important;
+    font-size: 12px;
   }
 }
