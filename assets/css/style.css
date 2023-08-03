@@ -10,8 +10,8 @@ header {
   top: 0;
 }
 /* Theme orange to blue */
-.theme-aria {
-  padding-top: 22px;
+.theme-aria-2 {
+  padding-top: 21px;
 }
 .theme-toggler-container {
   margin: 10px 10px 20px auto;
@@ -21,7 +21,7 @@ header {
 .text-theme,
 .theme-name {
   color: var(--color-primary);
-  font-size: 12px;
+  font-size: 10px;
   padding: 0;
   margin: 0;
   line-height: 16px;
@@ -113,6 +113,10 @@ header {
   margin: 2px 2px;
   padding: 3px;
 }
+.nav-button {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 .dropdown-menu {
   transition: all 0.4s;
   transition: opacity 0.4s;
@@ -182,7 +186,10 @@ header {
 }
 
 .nav-item {
-  padding: 32px 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 10px;
+  padding-right: 13px;
   margin: 0 10px 0 0;
 }
 .nav-link {
@@ -191,7 +198,7 @@ header {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-right: 18px;
+  margin-right: 15px;
   transition: all 0.4s;
 }
 .nav-link::after {

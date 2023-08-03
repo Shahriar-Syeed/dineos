@@ -214,6 +214,9 @@
   .reservation-area-section {
     padding: 10px;
   }
+  .theme-toggler-container {
+    margin-right: 0;
+  }
 }
 @media (max-width: 300px) {
   /* .reservation-area-section {
@@ -224,5 +227,8 @@
     margin-left: 3px !important;
     font-size: 12px;
     padding-left: 0;
+  }
+  .menu-area {
+    width: 42px;
   }
 }
