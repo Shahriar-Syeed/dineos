@@ -133,3 +133,264 @@ let swiper = new Swiper(".testimonial-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// dollar to taka
+// const themeTogglerContainer = document.querySelector(
+//   ".theme-toggler-container"
+// );
+// let themeToggler = document.querySelector(".theme-toggler");
+// let theme = document.querySelectorAll(".theme");
+// let currency = document.querySelectorAll(".currency");
+
+// themeTogglerContainer.onclick = () => {
+//   themeToggler.classList.toggle("active");
+//   if (themeToggler.classList.contains("active")) {
+//     for (let i = 0; i < currency.length; i++) {
+//       currency[i].innerText = "৳";
+//     }
+//     for (let k = 0; k < theme.length; k++) {
+//       theme[k].innerText = theme[k].innerText * 108.44;
+//     }
+//   } else {
+//     for (let i = 0; i < currency.length; i++) {
+//       currency[i].innerText = "$";
+//     }
+//     for (let k = 0; k < theme.length; k++) {
+//       theme[k].innerText = theme[k].innerText / 108.44;
+//     }
+//   }
+// };
+// THEME CHANGE
+// document.addEventListener("DOMContentLoaded", function themeChange() {
+//   const themeLink = document.getElementById("theme-blue");
+//   const themeTogglerContainer = document.querySelector(
+//     ".theme-toggler-container"
+//   );
+//   const original = document.getElementsByClassName("original");
+//   const blue = document.getElementsByClassName("blue");
+
+//   // Toggle the theme by adding/removing the theme CSS file
+//   if (themeLink.getAttribute("href") === "") {
+//     themeLink.setAttribute("href", "./assets/css/theme-blue.css");
+//     themeTogglerContainer.classList.add("active");
+//     original.classList.add("no-display");
+//     blue.classList.remove("no-display");
+//   } else {
+//     themeLink.setAttribute("href", "");
+//     themeTogglerContainer.classList.remove("active");
+//     blue.classList.add("no-display");
+//     original.classList.remove("no-display");
+//   }
+// });
+
+// const themeLink = document.getElementById("theme-blue");
+// const themeTogglerContainer = document.querySelector(
+//   ".theme-toggler-container"
+// );
+// const themeToggler = document.querySelector(".theme-toggler");
+// const original = document.getElementsByClassName("original");
+// const blue = document.getElementsByClassName("blue");
+// themeTogglerContainer.onclick = () => {
+//   // Toggle the theme by adding/removing the theme CSS file
+//   if (themeLink.getAttribute("href") == "#") {
+//     themeLink.setAttribute("href", "./assets/css/theme-blue.css");
+//     themeTogglerContainer.classList.add("active");
+//     themeToggler.classList.add("active");
+//     // original.classList.add("no-display");
+//     // blue.classList.remove("no-display");
+//   } else {
+//     themeLink.setAttribute("href", "#");
+//     themeTogglerContainer.classList.remove("active");
+//     themeToggler.classList.remove("active");
+//     // blue.classList.add("no-display");
+//     // original.classList.remove("no-display");
+//   }
+// };
+
+// let currentTheme = "original"; // Initially set to "original"
+
+// function setTheme(theme) {
+//   if (theme === "blue") {
+//     document.documentElement.style.setProperty(
+//       "--color-primary",
+//       "var(--color-primary-blue)"
+//     );
+//     document.documentElement.style.setProperty(
+//       "--color-secondary",
+//       "var(--color-secondary-blue)"
+//     );
+//   } else if (theme === "orange") {
+//     document.documentElement.style.setProperty(
+//       "--color-primary",
+//       "var(--color-primary-orange)"
+//     );
+//     document.documentElement.style.setProperty(
+//       "--color-secondary",
+//       "var(--color-secondary-orange)"
+//     );
+//   }
+
+//   // Store the selected theme in local storage to persist it across page loads
+//   localStorage.setItem("selected-theme", theme);
+
+//   // Update the current theme variable
+//   currentTheme = theme;
+// }
+
+// function toggleTheme() {
+//   const themeLink = document.getElementById("theme-blue");
+//   const themeTogglerContainer = document.querySelector(
+//     ".theme-toggler-container"
+//   );
+//   const themeToggler = document.querySelector(".theme-toggler");
+//   const blueText = document.querySelector(".blue-text");
+//   const originalText = document.querySelector(".original-text");
+
+//   if (currentTheme === "original") {
+//     themeLink.setAttribute("href", "#");
+//     themeTogglerContainer.classList.add("active");
+//     themeToggler.classList.add("active");
+//     setTheme("blue"); // Set to "blue" theme
+//   } else {
+//     themeLink.setAttribute("href", "");
+//     themeTogglerContainer.classList.remove("active");
+//     themeToggler.classList.remove("active");
+//     setTheme("original"); // Set back to "original" theme
+//   }
+// }
+
+let currentTheme = "original"; // Initially set to "original"
+
+function setTheme(theme) {
+  if (theme === "blue") {
+    document.documentElement.style.setProperty(
+      "--color-primary",
+      "var(--color-primary-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--color-secondary",
+      "var(--color-secondary-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--color-background-secondary",
+      "var(--color-background-secondary-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--color-background-shade",
+      "var(--color-background-shade-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--color-background-white",
+      "var(--color-background-white-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--color-text-shade",
+      "var(--color-text-shade-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--color-shape-shade",
+      "var(--color-shape-shade-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--font-primary",
+      "var(--font-primary-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--font-secondary",
+      "var(--font-secondary-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--font-footer",
+      "var(--font-footer-blue)"
+    );
+    document.documentElement.style.setProperty(
+      "--border-radius-primary",
+      "var(--border-radius-primary-blue)"
+    );
+  } else if (theme === "original") {
+    document.documentElement.style.removeProperty("--color-primary");
+    document.documentElement.style.removeProperty("--color-secondary");
+    document.documentElement.style.removeProperty(
+      "--color-background-secondary"
+    );
+    document.documentElement.style.removeProperty("--color-background-shade");
+    document.documentElement.style.removeProperty("--color-background-white");
+    document.documentElement.style.removeProperty("--color-text-shade");
+    document.documentElement.style.removeProperty("--color-shape-shade");
+    document.documentElement.style.removeProperty("--font-primary");
+    document.documentElement.style.removeProperty("--font-secondary");
+    document.documentElement.style.removeProperty("--font-footer");
+    document.documentElement.style.removeProperty("--border-radius-primary");
+  }
+
+  // Store the selected theme in local storage to persist it across page loads
+  localStorage.setItem("selected-theme", theme);
+
+  // Update the current theme variable
+  currentTheme = theme;
+
+  // Update the text of the theme toggler
+  updateThemeTogglerText();
+}
+
+function toggleTheme() {
+  const themeLink = document.getElementById("theme-blue");
+  const themeTogglerContainer = document.querySelector(
+    ".theme-toggler-container"
+  );
+  const themeToggler = document.querySelector(".theme-toggler");
+
+  const orText = document.querySelector(".orange-text");
+  const blText = document.querySelector(".blue-text");
+
+  if (currentTheme === "original") {
+    themeTogglerContainer.classList.add("active");
+    themeToggler.classList.add("active");
+
+    setTheme("blue"); // Set to "blue" theme
+  } else {
+    themeTogglerContainer.classList.remove("active");
+    themeToggler.classList.remove("active");
+
+    setTheme("original"); // Set back to "original" theme
+  }
+}
+
+function updateThemeTogglerText() {
+  const themeNameElement = document.querySelector(".theme-name");
+  themeNameElement.textContent =
+    currentTheme === "original" ? "Original" : "Blue";
+}
+document.addEventListener("DOMContentLoaded", function () {
+  const savedTheme = localStorage.getItem("selected-theme");
+  if (savedTheme) {
+    setTheme(savedTheme);
+  }
+});
+// Add more conditions for other themes as needed
+
+// Store the selected theme in local storage to persist it across page loads
+//   localStorage.setItem("selected-theme", theme);
+// }
+// function toggleTheme() {
+//   const themeLink = document.getElementById("theme-blue");
+//   const themeTogglerContainer = document.querySelector(
+//     ".theme-toggler-container"
+//   );
+
+//   if (themeLink.getAttribute("href") === "") {
+//     themeLink.setAttribute("href", "./assets/css/theme-blue.css");
+//     themeTogglerContainer.classList.add("active");
+//     setTheme("blue"); // Call the setTheme function with "blue" theme
+//   } else {
+//     themeLink.setAttribute("href", "");
+//     themeTogglerContainer.classList.remove("active");
+//     setTheme("original"); // Call the setTheme function with "original" theme
+//   }
+// }
+// document.addEventListener("DOMContentLoaded", function () {
+//   const savedTheme = localStorage.getItem("selected-theme");
+//   if (savedTheme) {
+//     setTheme(savedTheme);
+//   }
+// });
