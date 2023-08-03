@@ -190,7 +190,7 @@
     display: none;
   }
   footer .top-footer-section .container div {
-    padding-left: 15px;
+    padding-left: 3px;
   }
 }
 @media (max-width: 400px) {
@@ -216,12 +216,13 @@
   }
 }
 @media (max-width: 300px) {
-  .reservation-area-section {
+  /* .reservation-area-section {
     padding: 10px;
-  }
+  } */
   .footer-address ul li,
   .footer-address ul li a {
-    margin-left: 0 !important;
+    margin-left: 3px !important;
     font-size: 12px;
+    padding-left: 0;
   }
 }
