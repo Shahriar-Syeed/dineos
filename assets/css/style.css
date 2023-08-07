@@ -14,11 +14,11 @@ header {
   padding-top: 21px;
 }
 .theme-toggler-container {
-  margin: 10px 10px 20px auto;
+  margin: 0px 10px 20px auto;
   border-radius: var(--border-radius-primary);
   cursor: pointer;
 }
-.text-theme,
+
 .theme-name {
   color: var(--color-primary);
   font-size: 10px;
@@ -30,12 +30,12 @@ header {
 .theme-toggler-container .theme-toggler {
   height: 13px;
   width: 30px;
-  border-radius: var(--border-radius-primary);
-  background: var(--color-primary);
+  border-radius: 7px;
+  background: transparent;
   position: relative;
 
   margin: 0 10px;
-  border: 2px solid transparent;
+  border: 1px solid white;
   z-index: 1;
 }
 .theme-toggler-container .theme-toggler:before {
@@ -43,7 +43,7 @@ header {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background: var(--color-body);
+  background: #fff;
 
   position: absolute;
   top: -1px;

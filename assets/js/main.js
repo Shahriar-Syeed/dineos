@@ -340,15 +340,19 @@ function toggleTheme() {
   );
   const themeToggler = document.querySelector(".theme-toggler");
 
+  const themeLogoImage = document.getElementById("theme-logo-image");
+
   const orText = document.querySelector(".orange-text");
   const blText = document.querySelector(".blue-text");
 
   if (currentTheme === "original") {
+    themeLogoImage.setAttribute("src", "./img/application.png");
     themeTogglerContainer.classList.add("active");
     themeToggler.classList.add("active");
 
     setTheme("blue"); // Set to "blue" theme
   } else {
+    themeLogoImage.setAttribute("src", "./img/theme.png");
     themeTogglerContainer.classList.remove("active");
     themeToggler.classList.remove("active");
 
@@ -356,41 +360,27 @@ function toggleTheme() {
   }
 }
 
-function updateThemeTogglerText() {
-  const themeNameElement = document.querySelector(".theme-name");
-  themeNameElement.textContent =
-    currentTheme === "original" ? "Original" : "Blue";
-}
+// function updateThemeTogglerText() {
+//   const themeNameElement = document.querySelector(".theme-name");
+//   themeNameElement.textContent =
+//     currentTheme === "original"
+//       ? `<i class="fa-solid fa-moon fa-2xs"><i>` // Moon icon for the "original" theme
+//       : `<i class="fa-solid fa-circle fa-2xs"></i>`; // Circle icon for the "blue" theme
+// }
+// function updateThemeTogglerLogo() {
+//   const themeLogoImage = document.getElementById("theme-logo-image");
+//   // Replace "path/to/your/logo.png" with the path to your logo image for the "blue" theme
+//   const blueLogoPath = "./img/application.png";
+//   // Replace "path/to/your/logo-original.png" with the path to your logo image for the "original" theme
+//   const originalLogoPath = "./img/theme.png";
+
+//   themeLogoImage.src =
+//     currentTheme === "original" ? originalLogoPath : blueLogoPath;
+// }
+
 document.addEventListener("DOMContentLoaded", function () {
   const savedTheme = localStorage.getItem("selected-theme");
   if (savedTheme) {
     setTheme(savedTheme);
   }
 });
-// Add more conditions for other themes as needed
-
-// Store the selected theme in local storage to persist it across page loads
-//   localStorage.setItem("selected-theme", theme);
-// }
-// function toggleTheme() {
-//   const themeLink = document.getElementById("theme-blue");
-//   const themeTogglerContainer = document.querySelector(
-//     ".theme-toggler-container"
-//   );
-
-//   if (themeLink.getAttribute("href") === "") {
-//     themeLink.setAttribute("href", "./assets/css/theme-blue.css");
-//     themeTogglerContainer.classList.add("active");
-//     setTheme("blue"); // Call the setTheme function with "blue" theme
-//   } else {
-//     themeLink.setAttribute("href", "");
-//     themeTogglerContainer.classList.remove("active");
-//     setTheme("original"); // Call the setTheme function with "original" theme
-//   }
-// }
-// document.addEventListener("DOMContentLoaded", function () {
-//   const savedTheme = localStorage.getItem("selected-theme");
-//   if (savedTheme) {
-//     setTheme(savedTheme);
-//   }
-// });
