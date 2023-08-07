@@ -340,19 +340,19 @@ function toggleTheme() {
   );
   const themeToggler = document.querySelector(".theme-toggler");
 
-  const themeLogoImage = document.getElementById("theme-logo-image");
+  // const themeLogoImage = document.getElementById("theme-logo-image");
 
   const orText = document.querySelector(".orange-text");
   const blText = document.querySelector(".blue-text");
 
   if (currentTheme === "original") {
-    themeLogoImage.setAttribute("src", "./img/application.png");
+    // themeLogoImage.setAttribute("src", "./img/application.png");
     themeTogglerContainer.classList.add("active");
     themeToggler.classList.add("active");
 
     setTheme("blue"); // Set to "blue" theme
   } else {
-    themeLogoImage.setAttribute("src", "./img/theme.png");
+    // themeLogoImage.setAttribute("src", "./img/theme.png");
     themeTogglerContainer.classList.remove("active");
     themeToggler.classList.remove("active");
 

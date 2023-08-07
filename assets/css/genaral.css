@@ -5930,6 +5930,9 @@
   --font-secondary-orange: "Plus Jakarta Sans", sans-serif;
   --font-footer-orange: "DM Sans", Sans-serif;
   --border-radius-primary-orange: none;
+  --font-size-resarvation-lg-orange: 50px;
+  --font-size-resarvation-md-orange: 42px;
+  --font-size-resarvation-sm-orange: 40px;
   /* blue root */
   --color-primary-blue: #007bff;
   --color-secondary-blue: #222222;
@@ -5943,6 +5946,9 @@
   --font-footer-blue: "Roboto", Sans-serif;
   --border-radius-primary-blue: 5px;
   --background-accent-hover-blue: #c9c9c9;
+  --font-size-resarvation-lg-blue: 32px;
+  --font-size-resarvation-md-blue: 28px;
+  --font-size-resarvation-sm-blue: 26px;
 
   /* html */
   --color-primary: var(--color-primary-orange);
@@ -5987,7 +5993,9 @@
   --font-primary: var(--font-primary-orange);
   --font-secondary: var(--font-secondary-orange);
   --font-footer: var(--font-footer);
-  --font-size-b2: 1.6rem;
+  --font-size-resarvation-lg: var(--font-size-resarvation-lg-orange);
+  --font-size-resarvation-md: var(--font-size-resarvation-md-orange);
+  --font-size-resarvation-sm: var(--font-size-resarvation-sm-orange);
   --font-size-b3: 2.2rem;
   --line-height-b1: 2.6rem;
   --line-height-b2: 2.6rem;
