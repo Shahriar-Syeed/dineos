@@ -12,7 +12,7 @@
 
 ## Porject Tools & Tecnology
 
-<ul type="I">
+<ol type="I">
   <li>  
   ✔️  Bootstrap 5.3
   </li>
@@ -25,5 +25,5 @@
   <li>  
   ✔️ swiper slider 
   </li>
-</ul>
+</ol>
 
