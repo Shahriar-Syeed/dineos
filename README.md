@@ -12,7 +12,7 @@
 
 ## Porject Tools & Tecnology
 
-<ul style=" liststyle:none;">
+<ul type="I">
   <li>  
   ✔️  Bootstrap 5.3
   </li>
