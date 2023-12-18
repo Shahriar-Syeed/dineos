@@ -12,7 +12,7 @@
 
 ## Porject Tools & Tecnology
 
-<ol type="I">
+<ol type="none">
   <li>  
   ✔️  Bootstrap 5.3
   </li>
