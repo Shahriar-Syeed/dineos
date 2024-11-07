@@ -57,7 +57,7 @@
   
   <caption>Desktop Page Blue theme</caption>
   
-  ![Desktop View for blue theme](https://github.com/Shahriar-Syeed/dineos/blob/main/img/screenshot/esktop-2-blue.png)
+  ![Desktop View for blue theme](https://github.com/Shahriar-Syeed/dineos/blob/main/img/screenshot/desktop-2-blue.png)
   
   <caption>Desktop Page Blue theme</caption>
   
