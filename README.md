@@ -30,28 +30,45 @@
 ## Screenshots
 
   ![Desktop View for orange theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/descktop-1-orange.png)
+  
   <caption>Desktop Page Orange theme</caption>
+  
   ![Desktop View for orange theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/descktop-2-orange.png)
+  
   <caption>Desktop Page Orange theme</caption>
+  
   ![Desktop View for orange theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/descktop-3-orange.png)
+  
   <caption>Desktop Page Orange theme</caption>
+  
   ![Desktop View for orange theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/descktop-4-orange.png)
+  
   <caption>Desktop Page Orange theme</caption>
+  
   ![Desktop View for orange theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/descktop-5-orange.png)
+  
   <caption>Desktop Page Orange theme</caption>
+  
   ![Desktop View for orange theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/descktop-6-orange.png)
+  
   <caption>Desktop Page Orange theme</caption>
+  
   ![Desktop View for blue theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/descktop-1-blue.png)
+  
   <caption>Desktop Page Blue theme</caption>
+  
   ![Desktop View for blue theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/descktop-2-blue.png)
+  
   <caption>Desktop Page Blue theme</caption>
+  
   ![Mobile View for orange theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/mobile-1-orange.png)
+  
   <caption>Mobile Page Orange theme</caption>
+  
   ![Mobile View for blue theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/mobile-1-blue.png)
+  
   <caption>Mobile Page Blue theme</caption>
+  
   ![Mobile View for blue theme](https://github.com/Shahriar-Syeed/dineos/tree/main/img/screenshot/mobile-2-blue.png)
+  
   <caption>Mobile Page Blue theme</caption>
-
-
-
-
